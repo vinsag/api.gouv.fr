@@ -125,7 +125,7 @@ layout: default
         {% endif %}
       </div>
       <div class="ui tab" data-tab="cgu">
-        {% include contract/{{ page.contract | slugify }}.html %}
+        {% include contract/{{ page.contract | slugify }}.html api=page %}
       </div>
     </div>
   </div>

@@ -1,1 +1,15 @@
-OUVERT
+<h3 class="header">Ouvert</h3>
+<p>
+  L'API est ouverte. Tout le monde peut d'utiliser cette API.
+</p>
+{% if include.api.access_link %}
+<div class="ui icon success message">
+  <i class="sign in icon"></i>
+  <div class="content">
+    <div class="header">
+      Vous devez vous enregistrer pour utiliser l'API
+    </div>
+    <p>Utilisez la <a href="{{ include.api.access_link }}">page d'inscription</a> pour obtenir un accès immédiat.</p>
+  </div>
+</div>
+{% endif %}
