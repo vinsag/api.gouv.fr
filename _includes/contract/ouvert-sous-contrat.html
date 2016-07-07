@@ -1,1 +1,38 @@
-OUVERT sous contrat
+<h3 class="header">Ouvert sous contrat</h3>
+<p>
+  L'API est ouverte sous conditions. Elle est réservée aux entités suivantes&nbsp;:
+</p>
+<ul>
+  {% for client in include.api.clients %}
+  <li>{{ client }}</li>
+  {% endfor %}
+</ul>
+{% if include.api.constrains %}
+<div class="ui icon warning message">
+  <i class="warning sign icon"></i>
+  <div class="content">
+    <div class="header">
+      Pour les partenaires privés&nbsp;:
+    </div>
+    <ul>
+      {% for constrain in include.api.constrains %}
+      <li>{{ constrain }}</li>
+      {% endfor %}
+    </ul>
+    {% if include.api.charte %}
+    <p>
+      Pour en savoir plus merci de consulter la <a href="{{ include.api.charte }}">charte</a>
+    </p>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+<div class="ui icon success message">
+  <i class="sign in icon"></i>
+  <div class="content">
+    <div class="header">
+      Vous devez vous enregistrer pour utiliser l'API
+    </div>
+    <p>Utilisez la <a href="{{ include.api.access_link }}">page d'inscription</a> pour obtenir demander l'accès</p>
+  </div>
+</div>
