@@ -5,6 +5,9 @@ doc_tech: https://api.apientreprise.fr/docs
 domain: http://api.apientreprise.fr
 contact: contact@apientreprise.fr
 contract: OUVERT sous contrat
+constrains:
+  - Les consommateurs doivent participer à la finalité de simplifier une démarche administrative
+  - Les consommateurs doivent être en lien avec un acteur public, partie intéressée du processus simplifié
 stat:
   lastXdays: 30
   url: https://dashboard.apientreprise.fr/api/stats/apientreprise/last_30_days_requests
@@ -14,6 +17,7 @@ clients:
   - Administrations
   - Ministères
   - Places de marchés
+  - Entreprises
 partners:
   - DGFiP
   - ACOSS
