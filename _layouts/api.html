@@ -71,16 +71,7 @@ layout: default
             <div class="content">
               <div class="header">Conditions d'utilisation</div>
               <div class="description">
-                {% if page.contract == "OUVERT sous contrat"%}
-                  {{ page.contract }} au :
-                    <ul>
-                      {% for client in page.clients %}
-                        <li>{{ client }}</li>
-                      {% endfor%}
-                    </ul>
-                {% else %}
-                  {{ page.contract }}
-                {% endif %}
+                <a id="cgu-link">{{ page.contract }}</a>
               </div>
             </div>
           </div>
@@ -115,6 +106,7 @@ layout: default
       <div class="ui secondary pointing menu">
         <a class="item tab active" data-tab="funk">Description</a>
         <a class="item tab" data-tab="tech">Technique</a>
+        <a class="item tab" data-tab="cgu">Conditions d'utilisation</a>
       </div>
       <div class="ui active tab" data-tab="funk">
         <section class="markdown-body">
@@ -131,6 +123,9 @@ layout: default
             Vous pouvez retrouver la documentation technique sur <a href="{{ page.doc_tech }}" rel="noopener" target="_blank">le site de l'API</a>
           </p>
         {% endif %}
+      </div>
+      <div class="ui tab" data-tab="cgu">
+        {% include contract/{{ page.contract | slugify }}.html %}
       </div>
     </div>
   </div>
@@ -157,6 +152,12 @@ layout: default
 <script>
   $(function() {
     $('.menu .item.tab').tab();
+    $('#cgu-link')
+      .on('click', function() {
+        $.tab('change tab', 'cgu');
+        $('.menu .item.tab').removeClass('active')
+        $('.menu .tab[data-tab="cgu"]').addClass('active')
+      });
     {% if page.stat.url %}
       var $divStat = $( ".statistic .value" )
       $.get( "{{ page.stat.url }}", function( data ) {
