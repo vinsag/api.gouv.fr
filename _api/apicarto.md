@@ -1,5 +1,5 @@
 ---
-title: GéoAPI
+title: API CARTO
 tagline: Interrogez les référentiels géographiques plus facilement
 contract: OUVERT
 openapi_definition: https://apicarto.sgmap.fr/apidoc/cadastre.yml
