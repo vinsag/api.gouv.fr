@@ -43,7 +43,7 @@ Grâce à l'__API Carto__ vous pouvez également :
 * Connaître les groupements auxquels appartient une commune, ainsi que leurs compétences _(bientôt)_
 * Savoir si une parcelle appartient à certains zonages en utilisant vos données ou des données openData
 
-L’API Carto s’enrichissant progressivement, restez informés en suivant cette page, en visitant le site http://apicarto.ign.fr/ ou en nous contactant. http://apicarto.ign.fr/ ou [en nous contactant](mailto:apicarto@ign.fr).
+L’API Carto s’enrichissant progressivement, restez informés en suivant cette page, en visitant le site: http://apicarto.ign.fr/  ou [en nous contactant](mailto:apicarto@ign.fr).
 
 
 ## Informations complémentaires
