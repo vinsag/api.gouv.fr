@@ -23,7 +23,7 @@ keywords:
   - Surface
 ---
 
-__ API Carto__  est une boîte-à-outils __facile à prendre en main__ , proposant des briques logicielles qui visent à simplifier les démarches administratives dématérialisées.
+__API Carto__ est une boîte-à-outils __facile à prendre en main__ , proposant des briques logicielles qui visent à simplifier les démarches administratives dématérialisées.
 
 La première brique mise à disposition utilise les flux WFS IGN de la BD PARCELLAIRE®.
 Le service d'interrogation permet d’obtenir les éléments suivants :
@@ -38,12 +38,12 @@ Le service d'interrogation permet d’obtenir les éléments suivants :
     
     * centroïde d'une parcelle ou d'une commune(localisants)
 
-Grâce à l'__ API Carto__  vous pouvez également :
+Grâce à l'__API Carto__ vous pouvez également :
 
 * Connaître les groupements auxquels appartient une commune, ainsi que leurs compétences _(bientôt)_
 * Savoir si une parcelle appartient à certains zonages en utilisant vos données ou des données openData
 
-LL’API  Carto s’enrichissant progressivement, restez informés en suivant cette page, en visitant le site http://apicarto.ign.fr/ ou en nous contactant. http://apicarto.ign.fr/ ou [en nous contactant](mailto:apicarto@ign.fr).
+L’API Carto s’enrichissant progressivement, restez informés en suivant cette page, en visitant le site http://apicarto.ign.fr/ ou en nous contactant. http://apicarto.ign.fr/ ou [en nous contactant](mailto:apicarto@ign.fr).
 
 
 ## Informations complémentaires
@@ -62,7 +62,7 @@ Elle peut renvoyer des données au format JSON ou  [GeoJSON](http://geojson.org)
 Tout le monde peut utiliser l'api mais une demande de clé IGN est indispensable.
 
 #### Comment obtenir une clé IGN ?
-Pour obtenir une clé permettant l’accès aux ressources du Géoportail, vous devez vous connecter au site : http://professionnels.ign.fr/ ou http://api.ign.fr/accueil (pour une clé de développement)
+Pour obtenir une clé permettant l’accès aux ressources du Géoportail, vous devez vous connecter au site : http://professionnels.ign.fr/  ou  http://api.ign.fr/accueil (pour une clé de développement)
 
 
 #### Contact
