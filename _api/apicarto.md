@@ -23,25 +23,27 @@ keywords:
   - Surface
 ---
 
-APICARTO est une boîte-à-outils facile à prendre en main utilisant les flux wfs IGN(pour la partie cadastre).
-Le service d'interrogation du cadastre permet :
-   
-    * Obtenir les géométries pour une commune
-    
-    * Obtenir les divisions parcellaires d'une commune
-    
-    * Obtenir la géométrie d'une parcelle cadastrale
-    
-    * Obtenir les parcelles cadastrales avec les surfaces d'intersection à partir d'une géométrie
-    
-    * Obtenir le centroid d'une parcelle ou d'une commune(localisants)
+__ API Carto__  est une boîte-à-outils __facile à prendre en main__ , proposant des briques logicielles qui visent à simplifier les démarches administratives dématérialisées.
 
-Grâce à elle vous pouvez également :
+La première brique mise à disposition utilise les flux WFS IGN de la BD PARCELLAIRE®.
+Le service d'interrogation permet d’obtenir les éléments suivants :
+   
+    * géométries pour une commune
+    
+    * divisions parcellaires d'une commune
+    
+    * géométrie d'une parcelle cadastrale
+    
+    *  parcelles cadastrales avec les surfaces d'intersection à partir d'une géométrie saisie.
+    
+    * centroïde d'une parcelle ou d'une commune(localisants)
+
+Grâce à l'__ API Carto__  vous pouvez également :
 
 * Connaître les groupements auxquels appartient une commune, ainsi que leurs compétences _(bientôt)_
-* Savoir si une parcelle appartient à certains zonages en récupérant les tables métiers nécessaires
+* Savoir si une parcelle appartient à certains zonages en utilisant vos données ou des données openData
 
-Les différentes fonctionnalités arrivant progressivement, restez informés en suivant cette page, en visitant le site http://apicarto.ign.fr/ ou [en nous contactant](mailto:apicarto@ign.fr).
+LL’API  Carto s’enrichissant progressivement, restez informés en suivant cette page, en visitant le site http://apicarto.ign.fr/ ou en nous contactant. http://apicarto.ign.fr/ ou [en nous contactant](mailto:apicarto@ign.fr).
 
 
 ## Informations complémentaires
@@ -60,7 +62,7 @@ Elle peut renvoyer des données au format JSON ou  [GeoJSON](http://geojson.org)
 Tout le monde peut utiliser l'api mais une demande de clé IGN est indispensable.
 
 #### Comment obtenir une clé IGN ?
-Pour obtenir une clé geoportail, vous devez vous connecter au site : http://professionnels.ign.fr/ ou http://api.ign.fr/accueil (pour une clé de développement)
+Pour obtenir une clé permettant l’accès aux ressources du Géoportail, vous devez vous connecter au site : http://professionnels.ign.fr/ ou http://api.ign.fr/accueil (pour une clé de développement)
 
 
 #### Contact
